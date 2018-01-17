@@ -161,6 +161,107 @@
 
 				});
 
+
+			// video.
+			var $video = $('#video');
+
+			$video._locked = false;
+
+			$video._lock = function() {
+
+				if ($video._locked)
+					return false;
+
+				$video._locked = true;
+
+				window.setTimeout(function() {
+					$video._locked = false;
+				}, 350);
+
+				return true;
+
+			};
+
+			$video._show = function() {
+
+				if ($video._lock())
+					$body.addClass('is-video-visible');
+
+			};
+
+			$video._hide = function() {
+
+				if ($menu._lock())
+					$body.removeClass('is-video-visible');
+
+			};
+
+			$video._toggle = function() {
+
+				if ($menu._lock())
+					$body.toggleClass('is-video-visible');
+
+			};
+
+			$video
+				.appendTo($body)
+				.on('click', function(event) {
+
+					event.stopPropagation();
+
+					// Hide.
+						$video._hide();
+
+				})
+				.find('.inner')
+					.on('click', '.close', function(event) {
+
+						event.preventDefault();
+						event.stopPropagation();
+						event.stopImmediatePropagation();
+
+						// Hide.
+							$video._hide();
+
+					})
+					.on('click', function(event) {
+						event.stopPropagation();
+					})
+					.on('click', 'a', function(event) {
+
+						var href = $(this).attr('href');
+
+						event.preventDefault();
+						event.stopPropagation();
+
+						// Hide.
+							$video._hide();
+
+						// Redirect.
+							window.setTimeout(function() {
+								window.location.href = href;
+							}, 350);
+
+					});
+
+			$body
+				.on('click', 'a[href="#video"]', function(event) {
+
+					event.stopPropagation();
+					event.preventDefault();
+
+					// Toggle.
+						$video._toggle();
+
+				})
+				.on('keydown', function(event) {
+
+					// Hide on escape.
+						if (event.keyCode == 27)
+							$video._hide();
+
+				});
+
 	});
 
 })(jQuery);
