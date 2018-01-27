@@ -4048,5 +4048,18 @@
 		padding:2em;
 		margin:2em;
 		display:inline-block;
-	  }
- 
+	  } 
+
+	#contact-us{
+		width:80%;
+		background-color:#2e3141;
+		margin:auto;
+		padding:5%;
+		border-radius:5px;
+		display:block;
+		
+	}
+	 
+	#contact-us img{
+		width:60%;
+	}
