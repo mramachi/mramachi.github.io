@@ -3490,7 +3490,7 @@
 			}
 
 		.wrapper.spotlight {
-			background-color: #4c5c96;
+			background-color:#4c5c96;
 		}
 
 			.wrapper.spotlight:before, .wrapper.spotlight:after {
@@ -3502,7 +3502,7 @@
 			}
 
 			.wrapper.spotlight:after {
-				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+				box-shadow: inset 0 -1px 0 0#4c5c96, 0 1px 0 0 #4c5c96;
 			}
 
 			.wrapper.spotlight .inner {
@@ -4035,3 +4035,19 @@
 	.image-tablet{
 		margin-left:-60%;
 	}
+
+
+	.goals{
+		width:100%;
+	}
+
+	.goals > div {
+		width: 25%;
+		height: auto;
+		float:left;
+		border: 2px solid gray;
+		border-radius: 5px;
+		padding:2em;
+		margin:2em;
+	  }
+ 
