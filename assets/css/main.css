@@ -4030,3 +4030,8 @@
 			transform: translateY(0);
 			opacity: 1;
 		}
+
+
+	.image-tablet{
+		margin-left:-60%;
+	}
