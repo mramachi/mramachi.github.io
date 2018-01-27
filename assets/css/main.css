@@ -4035,20 +4035,6 @@
 	}
 
 
-	.goals{
-		width:100%;
-	}
-
-	.goal{
-		width: 25%;
-		height: auto;
-		float:left;
-		border: 2px solid gray;
-		border-radius: 5px;
-		padding:2em;
-		margin:2em;
-		display:inline-block;
-	  } 
 
 	#contact-us{
 		width:80%;
