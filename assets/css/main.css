@@ -4035,6 +4035,30 @@
 
 	.image-tablet{
 		margin-left:-60%;
+		width:100%;
+		-webkit-transition: all 1s ease-in;
+		-moz-transition: all 1s ease-in;
+		-o-transition: all 1s ease-in;
+		transition: all 1s ease-in;
+	}
+
+	.image-tablet img{
+		-webkit-transition: all 1s ease-in;
+		-moz-transition: all 1s ease-in;
+		-o-transition: all 1s ease-in;
+		transition: all 1s ease-in;
+	}
+
+	.image-tablet img:hover{
+		-webkit-transform: translate(3em,0);
+		-moz-transform: translate(3em,0);
+		-o-transform: translate(3em,0);
+		-ms-transform: translate(3em,0);
+		transform: translate(3em,0);
+		-webkit-transition: all 1s ease-in;
+		-moz-transition: all 1s ease-in;
+		-o-transition: all 1s ease-in;
+		transition: all 1s ease-in;
 	}
 
 
