@@ -23,7 +23,7 @@
     padding:5%;
     border-radius:5px;
     display:block;
-    min-height:35em;
+    min-height:40em;
     
 }
  
@@ -68,5 +68,26 @@
     margin-bottom: 0.8em;
     padding-bottom: 0.4em;
 }
+
+
+.linkedin-left{
+    display:inline-block;
+    float:left;
+    width: 2em;
+    height:2em;
+    border-radius:100%;
+    border: solid 2px rgba(255, 255, 255, 0.125);
+}
+
+.linkedin-left span{
+    margin-left:.5em;
+    width:1em;
+}
+
+.linkedin-right{
+    display:inline-block;
+    float:left;
+}
+
 
 
