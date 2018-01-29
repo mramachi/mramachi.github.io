@@ -2821,7 +2821,7 @@
 		z-index: 10000;
 	}
 		#header img{
-			height:100%;
+			width:3em;
 		}
 
 		#header h1 {
