@@ -70,7 +70,7 @@
 }
 
 
-.linkedin-left{
+#team-right .linkedin-left{
     display:inline-block;
     float:left;
     width: 2em;
@@ -79,12 +79,12 @@
     border: solid 2px rgba(255, 255, 255, 0.125);
 }
 
-.linkedin-left span{
+#team-right .linkedin-left span{
     margin-left:.5em;
     width:1em;
 }
 
-.linkedin-right{
+#team-right .linkedin-right{
     display:inline-block;
     float:left;
 }
